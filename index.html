@@ -42,9 +42,23 @@
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from The World's best cuisines and create a unique fusion experience. Our lipsmacking creation will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm align-self-center">
-                    <img src="img/logo.png" class="img-fluid">
+
+                <div class="col-12 col-sm-6 align-self-center">
+                    <div class="row">
+                        <div class="col-12 col-sm align-self-center">
+                            <img src="img/logo.png" class="img-fluid">
+                        </div>
+                        <div class="col-12 col-sm align-self-center">
+                            <a style="text-decoration:none" href="#testform">
+                                <button type="submit" class="btn btn-warning btn-block ">
+                                    Reserve Table
+                                </button>
+                            </a>
+                        </div>
+                    </div>
                 </div>
+                
+                
             </div>
         </div>
     </header>
@@ -62,11 +76,10 @@
                         <h2 class="mt-0">Uthappizzaa <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-secondary">$4.99</span></h2>
                         <p>A Unique combination of Indian Uthappam (pancake) and 
                             Italian pizza, topped with Cerignola olives,
-                             ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
-                   
-                     </div>
+                             ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>=
+                    </div>
                 </div>
-        </div>
+            </div>
         </div>
 
 
@@ -75,10 +88,18 @@
                 <h3>This Month's Promotions</h3>
             </div>
             <div class="col col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
-            </div>
+                <div class="media">
+                    <div class="media-body">
+                        <h2>Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
+                        <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                   
+                    </div>
+                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/buffet.png" alt="Buffet">
+                </div>
+                 </div>
         </div>
+
+
 
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 order-sm-last col-md-3">
@@ -97,6 +118,66 @@
                 </div>
             </div>
         </div>
+        
+        <div class="row row-content align-items-center ">
+            <div class="col-sm-2"></div>
+            <div class="col-12 col-sm-8">
+            <form id="testform">
+                <div class="card">
+                    <h3 class="card-header bg-warning text-white align-items-center">
+                    Reserve a Table
+                    </h3>
+                    <div class="card-body">
+                        <dl class="row">
+                            <dt class="col-12 col-sm-2">Number of Guests</dt>
+                            <dd class="col-12 col-sm-10">
+                                <label class="radio-inline"><input type="radio" name="optradio" checked>&nbsp;1 </label>&nbsp; &nbsp;
+                                <label class="radio-inline"><input type="radio" name="optradio">&nbsp;2 </label>&nbsp; &nbsp;
+                                <label class="radio-inline"><input type="radio" name="optradio">&nbsp;3 </label>&nbsp; &nbsp;
+                                <label class="radio-inline"><input type="radio" name="optradio">&nbsp;4 </label>&nbsp; &nbsp;
+                                <label class="radio-inline"><input type="radio" name="optradio">&nbsp;5 </label>&nbsp; &nbsp;
+                                <label class="radio-inline"><input type="radio" name="optradio">&nbsp;6 </label>
+            
+                            </dd>
+                            <dt class="col-12 col-sm-2"></dt>
+                            <dd class="col-12 col-sm-10"></dd>
+
+                            <dt class="col-12 col-sm-2"></dt>
+                            <dd class="col-12 col-sm-10"></dd>
+
+
+                            <dt class="col-12 col-sm-2">Date and Time</dt>
+                            <dd class="col-12 col-sm-10">
+                                <div class="row">
+                                    <div class="col-12 col-sm-4">
+                                        <input class="form-control" type="date" value="Date" id="example-date-input" placeholder="Date">
+                                    </div>
+                                    
+                                    <div class="col-12 col-sm-4">
+                                        <input class="form-control" type="time" value="Time" id="example-date-input" placeholder="Time">
+                                    </div>
+                                </div>     
+                            </dd>
+                        </dl>
+                        <div class="row"></div>
+                        <div class="row">
+                            <div class="col-12 col-sm-2"></div>
+                            <div class="col-12 col-sm">
+                                <button class="btn btn-primary btn-warning">
+                                    Reserve
+                                </button>
+                            </div>
+
+                        </div>
+                        <div class="row"></div>
+                    </div>
+                </div>
+            </form>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+    
+
     </div>
 
     <footer class="footer">
@@ -141,6 +222,9 @@
         </div>
     </footer>
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script>
+
+    </script>
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
