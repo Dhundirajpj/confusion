@@ -31,10 +31,30 @@
                     <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
 
                 </ul>
+                <span class="navbar-text">
+                    <a data-toggle="modal" data-target="#loginModal">
+                        <span class='fa fa-sign-in'></span>
+                            Login
+                    </a>
+                </span>
             </div>
         </div>
     </nav>  
 
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+        
+                <div class="modal-header">
+                    <h4 class="modal-title">Login</h4>
+                        <button type="button" class="close" data-dismiss="modal">
+                            &times;
+                        </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-body"></div>
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
@@ -49,10 +69,12 @@
                             <img src="img/logo.png" class="img-fluid">
                         </div>
                         <div class="col-12 col-sm align-self-center">
-                            <a style="text-decoration:none" href="#testform">
-                                <button type="submit" class="btn btn-warning btn-block ">
-                                    Reserve Table
-                                </button>
+                            <a role="button" class="btn btn-block nav-link btn-warning"
+                               data-toggle="tooltip" data-html="true" 
+                               title="Or Call Us at <br><strong>+852 1234567</strong>"
+                               data-placement="bottom"
+                                href="#testform">
+                                Reserve Table
                             </a>
                         </div>
                     </div>
@@ -73,7 +95,7 @@
                     <img class="d-flex mr-3 img-thumbnail align-self-center"
                         src="img/uthappizza.png" alt="Uthappizza">
                     <div class="media-body">
-                        <h2 class="mt-0">Uthappizzaa <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-secondary">$4.99</span></h2>
+                        <h2 class="mt-0">Uthappizzaa <span class="badge badge-danger"> HOT </span> <span class="badge badge-pill badge-secondary">$4.99</span></h2>
                         <p>A Unique combination of Indian Uthappam (pancake) and 
                             Italian pizza, topped with Cerignola olives,
                              ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>=
@@ -90,7 +112,7 @@
             <div class="col col-sm col-md">
                 <div class="media">
                     <div class="media-body">
-                        <h2>Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
+                        <h2>Weekend Grand Buffet <span class="badge badge-success">Easy</span></h2>
                         <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
                    
                     </div>
@@ -228,6 +250,12 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('[data-toggle="tooltip"]').tooltip();
+        }
+        );
+    </script>
 </body>
 
 </html>
